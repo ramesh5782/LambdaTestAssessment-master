@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="LambdaGridSuite" parallel="methods">
+
+    <test name="Chrome Test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="86.0"/>
+        <parameter name="platform" value="WIN10"/>
+        <classes>
+            <class name="tests.TestLambdaGrid"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Edge Test">
+        <parameter name="browser" value="MicrosoftEdge"/>
+        <parameter name="version" value="87.0"/>
+        <parameter name="platform" value="macos 10.13"/>
+        <classes>
+            <class name="tests.TestLambdaGrid"/>
+        </classes>
+    </test> <!-- Test -->
+
+</suite>
